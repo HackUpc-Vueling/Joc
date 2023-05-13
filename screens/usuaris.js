@@ -35,7 +35,7 @@ function UsersScreen() {
               style={{ backgroundColor: '#007AFF', padding: 16, borderRadius: 8 }}
               onPress={() => console.log('Botón clicado')}
             >
-              <Text style={{ color: 'white', fontWeight: 'bold' }}>Agregar usuario</Text>
+              <Text style={{ color: 'white', fontWeight: 'bold' }}>Atacar</Text>
             </TouchableOpacity>
           </View>
         </View>
