@@ -30,7 +30,7 @@ function Usuaris() {
               </TouchableOpacity>
             )}
           />
-          <View style={{ position: 'absolute', bottom: 16, right: 16 }}>
+          <View style={{ position: 'absolute', bottom: 70, right: 70 }}>
             <TouchableOpacity
               style={{ backgroundColor: '#FBDB5C', padding: 16, borderRadius: 8 }}
               onPress={() => console.log('Botón clicado')}

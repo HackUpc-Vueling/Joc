@@ -7,6 +7,6 @@ import Ranking from './screens/Ranking';
 export default function App() {
     return (
     <View>
-        <Usuaris> </Usuaris>
+        <Inici> </Inici>
     </View>);
 }
