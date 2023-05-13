@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { View, Text, FlatList, TouchableOpacity} from 'react-native';
 
-function UsersScreen() {
+function Usuaris() {
     const [users, setUsers] = useState([
       { id: 1, name: 'Javi', km: 3000 },
       { id: 2, name: 'Tania', km: 8000 },
