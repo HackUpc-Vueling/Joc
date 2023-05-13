@@ -1,5 +1,5 @@
-import { View, Text, FlatList, TouchableOpacity} from 'react-native';
 import React, {useState, useEffect} from 'react';
+import { View, Text, FlatList, TouchableOpacity} from 'react-native';
 
 function UsersScreen() {
     const [users, setUsers] = useState([
@@ -17,7 +17,7 @@ function UsersScreen() {
     return (
         <View>
           <Text style={{ fontSize: 24, fontWeight: 'bold', margin: 16 }}>
-            Lista de usuarios disponibles
+            Available target list
           </Text>
           <FlatList
             data={users}
@@ -25,21 +25,21 @@ function UsersScreen() {
             renderItem={({ item }) => (
               <TouchableOpacity onPress={() => handleUserPress(item)}>
                 <Text style={{ fontSize: 18, marginHorizontal: 16 }}>
-                  {item.name}
+                  {item.name} {item.km}
                 </Text>
               </TouchableOpacity>
             )}
           />
           <View style={{ position: 'absolute', bottom: 16, right: 16 }}>
             <TouchableOpacity
-              style={{ backgroundColor: '#007AFF', padding: 16, borderRadius: 8 }}
+              style={{ backgroundColor: '#FBDB5C', padding: 16, borderRadius: 8 }}
               onPress={() => console.log('Botón clicado')}
             >
-              <Text style={{ color: 'white', fontWeight: 'bold' }}>Atacar</Text>
+              <Text style={{ color: '#757574', fontWeight: 'bold' }}>Attack</Text>
             </TouchableOpacity>
           </View>
         </View>
       );
     }
     
-export default UsersScreen;
+export default Usuaris;
