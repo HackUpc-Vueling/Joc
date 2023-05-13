@@ -15,46 +15,28 @@ export default function Inici(props) {
 
   return (
     <View>
-        <Image source={require('./images/logo.png')} />
-        <View style={{ position: 'absolute', bottom: 50, right: 50 }}>
+      <Image source={require('../images/logo.png')}  style={styles.perfilimg} />
             <TouchableOpacity
               style={{ backgroundColor: '#FBDB5C', padding: 16, borderRadius: 8 }}
               onPress={() => console.log('Clicked button')}
             >
               <Text style={{ color: '#757574', fontWeight: 'bold' }}> Play</Text>
             </TouchableOpacity>
-          </View>
-          <View style={{ position: 'absolute', bottom: 70, right: 50 }}>
+
             <TouchableOpacity
               style={{ backgroundColor: '#FBDB5C', padding: 16, borderRadius: 8 }}
               onPress={() => console.log('Clicked button')}
             >
               <Text style={{ color: '#757574', fontWeight: 'bold' }}> Attack</Text>
             </TouchableOpacity>
-          </View>
     </View>
     
   );
 }
 
 const styles = StyleSheet.create({
-  inputUser: {
-    height: 40,
-    marginTop: '15%',
-    borderRadius: 10,
-    borderWidth: 2,
-    borderColor: 'white',
-    marginHorizontal: 20,
-    paddingHorizontal: 10,
-    color: 'white',
-  },
-  button: {
-    backgroundColor: 'blue',
-    borderRadius: 50,
-    width: 40,
-    height: 40,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 10,
-  },
+  perfilimg: {
+      width: 58,
+      height: 58,
+  }
 });
